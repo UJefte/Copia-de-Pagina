@@ -1,0 +1,199 @@
+/* Estilos generales */
+body {
+    font-family: 'Lora', serif; /* Aplicar la fuente Lora */
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; /* Cambiar el fondo a blanco */
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: #155494;
+    color: white;
+    padding: 0; /* Elimina el padding superior e inferior */
+    display: flex; /* Cambia a flex para organizar la imagen y el nav */
+    align-items: center; /* Alinea los elementos verticalmente */
+    height: 100px; /* Establece una altura fija para la franja */
+}
+
+.header-content {
+    display: flex;
+    align-items: center; /* Alinea los elementos verticalmente */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%; /* Asegura que ocupe todo el ancho */
+}
+
+.header-image {
+    height: 100px; /* Ajusta la imagen para que ocupe toda la altura del encabezado */
+    width: auto; /* Mantiene la proporción de la imagen */
+    margin-right: 200px; /* Agrega una separación de 200px entre la imagen y los menús */
+}
+
+nav {
+    flex-grow: 1; /* Permite que la navegación ocupe el espacio restante */
+    text-align: right; /* Alinea el contenido de la navegación a la derecha */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end; /* Alinea el contenido de la navegación a la derecha */
+    align-items: center; /* Centra verticalmente el contenido del menú */
+    gap: 20px;
+    margin: 0;
+    padding: 0; /* Elimina el padding del ul */
+    height: 100%; /* Asegura que el ul ocupe toda la altura del encabezado */
+}
+
+nav ul li {
+    position: relative; /* Agrega posición relativa para eliminar la línea debajo de cada menú */
+    width: 100%; /* Ajusta el ancho del li a todo el ancho del encabezado */
+    background-color: transparent; /* Agrega un background transparente al rectangulo invisible */
+    transition: background-color 0.3s ease; /* Agrega transición para el cambio de background color */
+    padding: 10px; /* Agrega padding al rectangulo invisible */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: Arial, sans-serif; /* Aplicar la fuente Arial solo al menú */
+    transition: color 0.3s ease; /* Agrega transición para el cambio de color */
+}
+
+nav ul li a:hover {
+    color: #ffffff; /* Cambia el color a un azul más claro al pasar el mouse */
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    background-color: #2bbffa; /* Cambia el background color a un azul más claro al pasar el mouse */
+}
+/* Estilos del icono de la lupa */
+.icono-lupa {
+    width: 20px;
+    height: 20px;
+}
+
+/* Estilos del artículo */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #ffffff; /* Cambiar el fondo a blanco */
+    padding: 20px;
+}
+
+h2 {
+    color: #000000;
+}
+
+.titulo {
+    display: flex;
+    flex-direction: column; /* Para apilar los textos */
+    align-items: center; /* Centrar el texto horizontalmente */
+}
+
+img {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+/* Estilos del pie de página */
+footer {
+    background-color: #155494;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+/* Estilos del artículo */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #ffffff; /* Cambiar el fondo a blanco */
+    padding: 20px;
+}
+
+h2 {
+    color: #000000;
+    font-size: 36px; /* Aumentar el tamaño del título */
+    text-align: left; /* Alinear el título a la izquierda */
+}
+
+.titulo {
+    display: flex;
+    flex-direction: column; /* Para apilar los textos */
+    align-items: flex-start; /* Alinear el texto horizontalmente a la izquierda */
+}
+
+.titulo span {
+    font-size: 36px; /* Aumentar el tamaño del título */
+}
+.separador {
+    display: inline-block;
+    width: 10px;
+    height: 1px;
+    background-color: #000;
+    margin: 0 10px;
+    vertical-align: middle;
+}
+.letra-mayor {
+    font-size: 16px;
+  }
+  
+  .letra-inicial {
+    font-size: 48px;
+    vertical-align: middle;
+  }
+  .icono-pequeno {
+    float: left;
+    height: 50px;
+    width: 300px;
+  }
+  .destacado {
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: #155494;
+    display: inline-block;  /* Ensures the background color only covers the text width */
+    padding: 0.2em 0.5em;  /* Adds slight padding to make it wider */
+    border-radius: 4px;    /* Optional: adds rounded corners */
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(87, 87, 87);
+    padding: 20px;
+    color: white;
+}
+
+.footer-wrapper {
+    margin: 0 200px; /* Add this line to set left and right margin to 200px */
+}
+
+.footer-text {
+    flex: 1; /* Ocupa la mitad del espacio */
+    text-align: left;
+}
+
+.footer-image {
+    flex: 1; /* Ocupa la otra mitad del espacio */
+    text-align: center;
+}
+
+.footer-image img {
+    width: 150px;
+    height: 50px;
+}
+
+.footer-image p {
+    margin-top: 10px; /* Espacio entre la imagen y el texto */
+}
